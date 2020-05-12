@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ReceiptX</string>
+    <!--    <string name="title_activity_test_bottom">TestBottom</string>-->
+    <!--    <string name="title_home">Home</string>-->
+    <!--    <string name="title_dashboard">Dashboard</string>-->
+    <!--    <string name="title_notifications">Notifications</string>-->
+    <string-array name="filters">
+        <item>Default</item>
+        <item>Date: Recent to Oldest</item>
+        <item>Date: Oldest to Recent</item>
+        <item>Receipt Title: A-Z</item>
+        <item>Receipt Title: Z-A</item>
+        <item>Total: High to Low</item>
+        <item>Total: Low to High</item>
+        <item>Vendor: A-Z</item>
+        <item>Vendor: Z-A</item>
+    </string-array>
+
+    <string-array name="categories">
+        <item>Select a Category</item>
+        <item>Food</item>
+        <item>Retail</item>
+        <item>Entertainment</item>
+        <item>Transportation</item>
+        <item>Housing</item>
+        <item>Misc</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Select State</item>
+        <item>AL</item>
+        <item>AK</item>
+        <item>AZ</item>
+        <item>AR</item>
+        <item>CA</item>
+        <item>CO</item>
+        <item>CT</item>
+        <item>DE</item>
+        <item>FL</item>
+        <item>GA</item>
+        <item>HI</item>
+        <item>ID</item>
+        <item>IL</item>
+        <item>IN</item>
+        <item>IA</item>
+        <item>KS</item>
+        <item>KY</item>
+        <item>LA</item>
+        <item>ME</item>
+        <item>MD</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>MS</item>
+        <item>MS</item>
+        <item>MO</item>
+        <item>MT</item>
+        <item>NE</item>
+        <item>NV</item>
+        <item>NH</item>
+        <item>NJ</item>
+        <item>NM</item>
+        <item>NY</item>
+        <item>NC</item>
+        <item>ND</item>
+        <item>OH</item>
+        <item>OK</item>
+        <item>OR</item>
+        <item>PA</item>
+        <item>RI</item>
+        <item>SC</item>
+        <item>SD</item>
+        <item>TN</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>VT</item>
+        <item>VA</item>
+        <item>WA</item>
+        <item>WV</item>
+        <item>WI</item>
+        <item>WY</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/regular"
+            android:gravity="center"
+            android:text="Receipt Name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/storeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/storeTextView"
+            android:fontFamily="@font/light"
+            android:gravity="center"
+            android:text="Store"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/thin"
+            android:gravity="center"
+            android:text="Date"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/totalTextView"
+            android:fontFamily="@font/bold"
+            android:gravity="center"
+            android:text="Total"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/detailsButton"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="More Details"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

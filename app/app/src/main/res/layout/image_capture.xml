@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".ImageCapture">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="362dp"
+                        android:layout_height="35dp"
+                        android:fontFamily="@font/light"
+                        android:text='Please tap on "Add Image" to add items'
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Image Preview" />
+
+                    <ImageView
+                        android:id="@+id/receiptImageIV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="250dp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/addImageButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onAddImageButtonClick"
+                        android:text="Add Image" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/cancelButton"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:onClick="onCancelButtonClick"
+                            android:text="Cancel" />
+
+                        <Button
+                            android:id="@+id/nextButton"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:onClick="onNextButtonClick"
+                            android:text="next" />
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="23dp"
+                            android:layout_height="21dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.21"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/off_process" />
+
+                        <ImageView
+                            android:id="@+id/imageView33"
+                            android:layout_width="23dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="323dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView32"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/off_process" />
+
+                        <ImageView
+                            android:id="@+id/imageView34"
+                            android:layout_width="23dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="245dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView33"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/off_process" />
+
+                        <ImageView
+                            android:id="@+id/imageView35"
+                            android:layout_width="23dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="218dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView34"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/off_process" />
+
+                        <ImageView
+                            android:id="@+id/imageView36"
+                            android:layout_width="23dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="166dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView35"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/on_process" />
+
+                        <ImageView
+                            android:id="@+id/imageView37"
+                            android:layout_width="23dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="109dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/imageView36"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:srcCompat="@drawable/off_process" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
